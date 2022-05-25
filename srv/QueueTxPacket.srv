@@ -1,0 +1,13 @@
+# Version of the ros_acomms/QueueTxPacket service with the micromodem-specific
+# fields stripped out.
+int8 QUEUE_IMMEDIATE=1
+int8 QUEUE_PPS=2
+int8 QUEUE_TXTRIG=3
+int8 queue
+bool insert_at_head
+float32 requested_src_level_db
+sonardyne_msgs/Packet packet
+---
+bool success
+int32 position_in_queue
+float32 actual_src_level_db

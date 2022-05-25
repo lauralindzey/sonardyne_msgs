@@ -7,8 +7,14 @@ add_message_files(
   DeviceEnable.msg
   DeviceStatus.msg
   DeviceValue.msg
+  Packet.msg
   Position.msg
+  ReceivedPacket.msg
   SMS.msg
+)
+
+add_service_files(FILES
+  QueueTxPacket.srv
 )
 
 generate_messages(
